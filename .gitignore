@@ -1,0 +1,12 @@
+# Intellij
+.idea
+*.iml
+
+# node.js
+node_modules
+
+# Bower
+sandbox/libraries
+
+# target
+target
