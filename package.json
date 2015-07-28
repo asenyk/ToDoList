@@ -2,6 +2,11 @@
   "name": "todo",
   "private": true,
   "devDependencies": {
-    "grunt": "0.4.5"
+    "grunt": "0.4.5",
+    "load-grunt-config": "0.17.2",
+    "grunt-contrib-connect": "0.10.1",
+    "grunt-contrib-clean": "0.6.0",
+    "grunt-contrib-copy": "0.8.0",
+    "grunt-contrib-watch": "0.6.1"
   }
 }

@@ -1,7 +1,9 @@
 module.exports = function (grunt) {
 
-    grunt.initConfig({});
+    var path = require('path');
 
-    grunt.registerTask('default', []);
+    require('load-grunt-config')(grunt, {
+        configPath: path.join(process.cwd(),'grunt/config')
+    });
 
 };

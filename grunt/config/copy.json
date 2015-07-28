@@ -1,0 +1,8 @@
+{
+  "html": {
+    "expand": true,
+    "cwd": "src/html/",
+    "src": "index.html",
+    "dest": "target/"
+  }
+}

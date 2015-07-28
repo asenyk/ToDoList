@@ -1,0 +1,14 @@
+{
+  "dev": [
+    "build",
+    "connect:sandbox",
+    "watch"
+  ],
+  "build": [
+    "build:html"
+  ],
+  "build:html": [
+    "clean:html",
+    "copy:html"
+  ]
+}
