@@ -1,0 +1,7 @@
+{
+  "dev": {
+    "files": {
+      "target/css/application.css": ["src/less/app.less", "src/less/form.less"]
+    }
+  }
+}

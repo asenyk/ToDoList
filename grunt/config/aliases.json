@@ -5,7 +5,8 @@
     "watch"
   ],
   "build": [
-    "build:html"
+    "build:html",
+    "less"
   ],
   "build:html": [
     "clean:html",
