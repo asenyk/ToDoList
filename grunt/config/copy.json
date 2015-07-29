@@ -4,5 +4,11 @@
     "cwd": "src/html/",
     "src": "index.html",
     "dest": "target/"
+  },
+  "view": {
+    "expand": true,
+    "cwd": "src/html/",
+    "src": "view/*",
+    "dest": "target/"
   }
 }

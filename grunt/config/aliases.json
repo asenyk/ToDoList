@@ -9,6 +9,7 @@
   ],
   "build:html": [
     "clean:html",
-    "copy:html"
+    "copy:html",
+    "copy:view"
   ]
 }
