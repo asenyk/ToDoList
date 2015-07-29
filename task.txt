@@ -28,3 +28,9 @@ Environment
  - copy index.html from source folder to target folder
  - setup watcher for index.html changes
 6. Attach Bootsrtap to your index.html
+
+# LESS
+1. Configure less compiler task
+ - compile all *.less files from less directory into application.css
+ - attach this file to your index.html
+2. Create dummy less file
