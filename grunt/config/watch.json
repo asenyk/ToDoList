@@ -1,6 +1,6 @@
 {
   "html": {
-    "files": ["src/html/*", "src/html/view/*"],
+    "files": ["src/html/**/*"],
     "tasks": ["build:html"]
   }
 }
