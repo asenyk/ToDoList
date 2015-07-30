@@ -1,0 +1,6 @@
+{
+  "application": {
+    "src": "target/css/application.css",
+    "dest": "target/css/application.min.css"
+  }
+}

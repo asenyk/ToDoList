@@ -6,10 +6,23 @@
   ],
   "build": [
     "build:html",
-    "less"
+    "build:css"
   ],
   "build:html": [
-    "clean:html",
-    "copy:html"
+    "build:html:index",
+    "build:html:view"
+  ],
+  "build:html:index": [
+    "clean:index.html",
+    "copy:index.html"
+  ],
+  "build:html:view": [
+    "clean:view.html",
+    "copy:view.html"
+  ],
+  "build:css": [
+    "clean:css",
+    "less:application",
+    "cssmin:application"
   ]
 }

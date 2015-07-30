@@ -1,3 +1,5 @@
 {
-  "html": ["target/**/*", "!target/libraries/**"]
+  "index.html": "target/index.html",
+  "view.html": "target/view/",
+  "css" : "target/css/"
 }

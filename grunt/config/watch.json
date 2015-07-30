@@ -1,6 +1,14 @@
 {
-  "html": {
-    "files": ["src/html/**/*"],
-    "tasks": ["build:html"]
+  "index.html": {
+    "files": ["src/html/index.html"],
+    "tasks": ["build:html:index"]
+  },
+  "view.html": {
+    "files": ["src/html/view/**/*"],
+    "tasks": ["build:html:view"]
+  },
+  "css": {
+    "files": ["src/less/**/*"],
+    "tasks": ["build:css"]
   }
 }

@@ -1,8 +1,12 @@
 {
-  "html": {
+  "index.html": {
+    "src": "src/html/index.html",
+    "dest": "target/index.html"
+  },
+  "view.html": {
     "expand": true,
-    "cwd": "src/html/",
-    "src": ["**/*"],
-    "dest": "target/"
+    "cwd": "src/html/view/",
+    "src": "**/*",
+    "dest": "target/view/"
   }
 }

@@ -1,7 +1,10 @@
 {
-  "dev": {
-    "files": {
-      "target/css/application.css": ["src/less/app.less", "src/less/form.less"]
-    }
+  "application": {
+    "options": {
+      "sourceMap": true,
+      "sourceMapURL": "application.css.map"
+    },
+    "src": "src/less/application.less",
+    "dest": "target/css/application.css"
   }
 }
