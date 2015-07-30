@@ -34,3 +34,9 @@ Environment
  - compile all *.less files from less directory into application.css
  - attach this file to your index.html
 2. Create dummy less file
+
+#TO DO MAIN PAGE
+1. Using less and Twitter Boostrap style ToDo application mock
+ - input field for adding new ToDo items
+ - list of current ToDo items
+ - checkboxes near each ToDo items for marking item as done
