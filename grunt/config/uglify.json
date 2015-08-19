@@ -1,0 +1,6 @@
+{
+  "application": {
+    "src": "src/js/addNewTask.js",
+    "dest": "target/js/main.js"
+  }
+}

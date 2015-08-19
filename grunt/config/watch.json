@@ -10,5 +10,9 @@
   "css": {
     "files": ["src/less/**/*"],
     "tasks": ["build:css"]
+  },
+  "js": {
+    "files": ["src/js/**/*"],
+    "tasks": ["build:js"]
   }
 }

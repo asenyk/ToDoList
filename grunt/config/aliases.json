@@ -6,7 +6,8 @@
   ],
   "build": [
     "build:html",
-    "build:css"
+    "build:css",
+    "build:js"
   ],
   "build:html": [
     "build:html:index",
@@ -24,5 +25,9 @@
     "clean:css",
     "less:application",
     "cssmin:application"
+  ],
+  "build:js": [
+    "clean:js",
+    "uglify:application"
   ]
 }
