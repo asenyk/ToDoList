@@ -19,7 +19,7 @@
                 input.checked = true;
             }
             li.className = "list-group-item";
-            input.className = "statuscheckboxStatus";
+            input.className = "statusCheckbox";
             li.innerHTML = taskList[i].taskbody;
             taskListID.appendChild(li);
             li.insertBefore(input, li.firstChild);
