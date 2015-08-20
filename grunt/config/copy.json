@@ -10,7 +10,11 @@
     "dest": "target/view/"
   },
   "js": {
-    "src": "src/js/**/*",
-    "dest": "target/js/main.js"
+    "expand": true,
+    "cwd": "src/",
+    "src": "js/**",
+    "dest": "target/js",
+    "flatten": true,
+    "filter": "isFile"
   }
 }
