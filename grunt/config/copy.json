@@ -8,5 +8,9 @@
     "cwd": "src/html/view/",
     "src": "**/*",
     "dest": "target/view/"
+  },
+  "js": {
+    "src": "src/js/**/*",
+    "dest": "target/js/main.js"
   }
 }

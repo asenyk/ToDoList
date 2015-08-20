@@ -1,6 +1,10 @@
 {
   "application": {
+    "options": {
+      "sourceMap": true,
+      "sourceMapName": "target/js/main.min.js.map"
+    },
     "src": "src/js/addNewTask.js",
-    "dest": "target/js/main.js"
+    "dest": "target/js/main.min.js"
   }
 }

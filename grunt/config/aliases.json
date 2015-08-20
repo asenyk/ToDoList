@@ -28,6 +28,7 @@
   ],
   "build:js": [
     "clean:js",
-    "uglify:application"
+    "uglify:application",
+    "copy:js"
   ]
 }
