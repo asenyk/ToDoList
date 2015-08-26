@@ -16,7 +16,15 @@
         var done = false;
         var taskbody = getNewTask.value;
         var id = taskList.length + 1;
+        var li = document.createElement("li");
+        var input = document.createElement("input");
         taskList.push({"id": id, "taskbody": taskbody, "done": done});
+        input.setAttribute("type", "checkbox");
+        li.className = "list-group-item";
+        input.className = "statusCheckbox";
+        li.innerHTML = taskbody;
+        taskListID.appendChild(li);
+        li.insertBefore(input, li.firstChild);
     }
 
     function printTask() {
@@ -39,7 +47,6 @@
 
     addTask.onclick = function () {
         addNewTask();
-        printTask();
     };
 
 }(document));
