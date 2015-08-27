@@ -37,7 +37,7 @@
 3. Add css minification and css maping. 
 
 # TO DO MAIN PAGE
-1. Using less and Twitter Boostrap style ToDo application mock
- - input field for adding new ToDo items
- - list of current ToDo items
- - checkboxes near each ToDo items for marking item as done
+1. Using less and Twitter Boostrap style
+ - input field for adding new
+ - list of current
+ - checkboxes near each

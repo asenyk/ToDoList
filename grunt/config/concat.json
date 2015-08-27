@@ -1,0 +1,6 @@
+{
+  "js": {
+    "src": "src/js/**/*.js",
+    "dest": "target/js/main.js"
+  }
+}

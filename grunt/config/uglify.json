@@ -4,7 +4,7 @@
       "sourceMap": true,
       "sourceMapName": "target/js/main.min.js.map"
     },
-    "src": "src/js/addNewTask.js",
+    "src": "target/js/main.js",
     "dest": "target/js/main.min.js"
   }
 }

@@ -8,13 +8,5 @@
     "cwd": "src/html/view/",
     "src": "**/*",
     "dest": "target/view/"
-  },
-  "js": {
-    "expand": true,
-    "cwd": "src/",
-    "src": "js/**",
-    "dest": "target/js",
-    "flatten": true,
-    "filter": "isFile"
   }
 }

@@ -16,34 +16,39 @@
         var done = false;
         var taskbody = getNewTask.value;
         var id = taskList.length + 1;
+        taskList.push({"id": id, "taskbody": taskbody, "done": done});
+        printTask(taskbody);
+    }
+
+    document.getElementById("inputAddNewTaskID").addEventListener("keypress", function(event) {
+        if (event.keyCode == 13) {
+            event.preventDefault();
+            addNewTask();
+        }
+    });
+
+    function printTask(taskbody, done) {
         var li = document.createElement("li");
         var input = document.createElement("input");
-        taskList.push({"id": id, "taskbody": taskbody, "done": done});
         input.setAttribute("type", "checkbox");
         li.className = "list-group-item";
         input.className = "statusCheckbox";
         li.innerHTML = taskbody;
         taskListID.appendChild(li);
         li.insertBefore(input, li.firstChild);
-    }
-
-    function printTask() {
-        for (var i = 0, n = taskList.length; i < n; i++) {
-            var li = document.createElement("li");
-            var input = document.createElement("input");
-            input.setAttribute("type", "checkbox");
-            if (taskList[i].done === true) {
-                input.checked = true;
-            }
-            li.className = "list-group-item";
-            input.className = "statusCheckbox";
-            li.innerHTML = taskList[i].taskbody;
-            taskListID.appendChild(li);
-            li.insertBefore(input, li.firstChild);
+        if (done === true) {
+            input.checked = true;
+            li.className = "statusDone list-group-item";
         }
     }
 
-    document.addEventListener("DOMContentLoaded", printTask);
+    function printAllTask() {
+        for (var i = 0, n = taskList.length; i < n; i++) {
+            printTask(taskList[i].taskbody, taskList[i].done);
+        }
+    }
+    document.addEventListener("DOMContentLoaded", printAllTask);
+
 
     addTask.onclick = function () {
         addNewTask();
