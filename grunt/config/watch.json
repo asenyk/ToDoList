@@ -14,5 +14,9 @@
   "js": {
     "files": ["src/js/**/*"],
     "tasks": ["build:js"]
+  },
+  "json": {
+    "files": ["src/json/**/*"],
+    "tasks": ["build:json"]
   }
 }

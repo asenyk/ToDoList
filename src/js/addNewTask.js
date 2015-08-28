@@ -5,9 +5,7 @@
 (function (document) {
     "use strict";
 
-    var taskList = [{"id": "taskID1", "taskbody": "task 1", "done": true},
-        {"id": "taskID2", "taskbody": "task 2", "done": false},
-        {"id": "taskID3", "taskbody": "task 3", "done": true}];
+    var taskList = JSON.parse(data);
     var taskListID = document.getElementById("taskListID");
     var addTask = document.getElementById("btnAddNewTaskID");
 
@@ -16,8 +14,20 @@
         var id = "taskID" + (taskList.length + 1);
         var taskbody = getNewTask.value;
         var done = false;
-        taskList.push({"id": id, "taskbody": taskbody, "done": done});
-        printTask(taskbody, done, id);
+        if (formValidate(taskbody) === true) {
+            taskList.push({"id": id, "taskbody": taskbody, "done": done});
+            printTask(taskbody, done, id);
+        } else {
+            alert("minimum 6 symbols");
+        }
+    }
+
+    function formValidate(taskbody) {
+        if (taskbody.length > 5) {
+            return true;
+        } else {
+            return false;
+        }
     }
 
     function removeTask(id) {
@@ -25,7 +35,7 @@
         removeElement.parentNode.removeChild(removeElement);
         for (var i = 0, n = taskList.length; i < n; i++) {
             if (taskList[i].id === id) {
-                taskList.splice(i,1);
+                taskList.splice(i, 1);
             }
         }
     }
@@ -51,7 +61,7 @@
         }
         remove.onclick = function () {
             removeTask(removeID);
-        }
+        };
     }
 
     function printAllTask() {
@@ -72,6 +82,5 @@
     addTask.onclick = function () {
         addNewTask();
     };
-
 
 }(document));

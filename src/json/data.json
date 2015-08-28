@@ -1,0 +1,7 @@
+{
+  "data": [
+    {"id": "taskID1", "taskbody": "task 1", "done": true},
+    {"id": "taskID2", "taskbody": "task 2", "done": false},
+    {"id": "taskID3", "taskbody": "task 3", "done": true}
+  ]
+}

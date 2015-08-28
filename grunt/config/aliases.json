@@ -7,7 +7,8 @@
   "build": [
     "build:html",
     "build:css",
-    "build:js"
+    "build:js",
+    "build:json"
   ],
   "build:html": [
     "build:html:index",
@@ -29,6 +30,11 @@
   "build:js": [
     "clean:js",
     "concat:js",
-    "uglify:application"
+    "uglify:application",
+    "jshint:js"
+  ],
+  "build:json": [
+    "clean:json",
+    "copy:json"
   ]
 }

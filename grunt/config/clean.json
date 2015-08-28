@@ -2,5 +2,6 @@
   "index.html": "target/index.html",
   "view.html": "target/view/",
   "css" : "target/css/",
-  "js" : "target/js/"
+  "js" : "target/js/",
+  "json" : "target/json/"
 }
