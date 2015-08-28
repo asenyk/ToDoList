@@ -5,17 +5,17 @@
 (function (document) {
     "use strict";
 
-    var taskList = [{"id": 1, "taskbody": "task 1", "done": true},
-        {"id": 2, "taskbody": "task 2", "done": false},
-        {"id": 3, "taskbody": "task 3", "done": true}];
+    var taskList = [{"id": "taskID1", "taskbody": "task 1", "done": true},
+        {"id": "taskID2", "taskbody": "task 2", "done": false},
+        {"id": "taskID3", "taskbody": "task 3", "done": true}];
     var taskListID = document.getElementById("taskListID");
     var addTask = document.getElementById("btnAddNewTaskID");
 
     function addNewTask() {
         var getNewTask = document.getElementById("inputAddNewTaskID");
-        var done = false;
+        var id = "taskID" + (taskList.length + 1);
         var taskbody = getNewTask.value;
-        var id = taskList.length + 1;
+        var done = false;
         taskList.push({"id": id, "taskbody": taskbody, "done": done});
         printTask(taskbody, done, id);
     }
@@ -23,13 +23,18 @@
     function removeTask(id) {
         var removeElement = document.getElementById(id);
         removeElement.parentNode.removeChild(removeElement);
+        for (var i = 0, n = taskList.length; i < n; i++) {
+            if (taskList[i].id === id) {
+                taskList.splice(i,1);
+            }
+        }
     }
 
     function printTask(taskbody, done, id) {
         var li = document.createElement("li");
         var input = document.createElement("input");
         var remove = document.createElement("a");
-        var removeID = "taskID" + id;
+        var removeID = id;
         input.setAttribute("type", "checkbox");
         li.className = "list-group-item";
         input.className = "statusCheckbox";
